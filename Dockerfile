@@ -21,7 +21,7 @@ FROM eclipse-temurin:21-jre AS runtime
 LABEL org.opencontainers.image.source="https://github.com/Lsgserver/Velocity"
 LABEL description="VelocityMC Proxy"
 
-RUN useradd -m -u 1000 -s /bin/bash velocity
+RUN useradd -m -s /bin/bash velocity
 
 WORKDIR /velocity
 
