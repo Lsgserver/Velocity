@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        REGISTRY   = 'localhost:8085'
+        REGISTRY   = 'docker.lsgserver.dev'
         IMAGE_NAME = 'velocitymc'
         IMAGE_TAG  = "${env.BUILD_NUMBER}"
         FULL_IMAGE = "${REGISTRY}/${IMAGE_NAME}:${IMAGE_TAG}"
